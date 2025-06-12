@@ -1,0 +1,43 @@
+name: aflow
+base: core24
+version: 4.0.4
+summary: Automatic-FLOW for Materials Discovery
+description: |
+  The Automatic-FLOW (AFLOW) framework is a class of interconnected software tools
+  designed for high-throughput materials discovery, leveraging both first-principles 
+  quantum mechanical calculations using density functional theory (DFT), and data 
+  informatics as a screening strategy.
+grade: devel
+website: https://aflow.org
+confinement: strict
+platforms:
+  amd64:
+  arm64:
+
+parts:
+  aflow:
+    source: https://github.com/aflow-org/aflow.git
+    source-submodules: []
+    source-subdir: src
+    source-type: git
+    plugin: cmake
+    cmake-generator: Ninja
+    cmake-parameters:
+      - CMAKE_BUILD_TYPE=Release
+    build-packages:
+      - cmake
+      - ninja-build
+      - libssl-dev
+      - libcurl4-openssl-dev
+      - libarchive-dev
+    stage-packages:
+      - libssl-dev
+      - libcurl4-openssl-dev
+      - libarchive-dev
+
+apps:
+  aflow:
+    command: /usr/local/bin/aflow
+    plugs:
+      - network
+      - home
