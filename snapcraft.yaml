@@ -7,7 +7,7 @@ description: |
   designed for high-throughput materials discovery, leveraging both first-principles 
   quantum mechanical calculations using density functional theory (DFT), and data 
   informatics as a screening strategy.
-grade: devel
+grade: stable
 website: https://aflow.org
 confinement: strict
 platforms:
