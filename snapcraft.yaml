@@ -37,7 +37,7 @@ parts:
 
 apps:
   aflow:
-    command: /usr/local/bin/aflow
+    command: usr/local/bin/aflow
     plugs:
       - network
       - home
