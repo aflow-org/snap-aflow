@@ -14,12 +14,6 @@ platforms:
   amd64:
   arm64:
 
-plugs:
-  dot-aflow-rc:
-    interface: personal-files
-    write:
-    - $HOME/.aflow.rc
-
 parts:
   aflow:
     source: https://github.com/aflow-org/aflow.git
@@ -48,4 +42,3 @@ apps:
     plugs:
       - network
       - home
-      - dot-aflow-rc
