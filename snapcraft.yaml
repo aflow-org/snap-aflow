@@ -1,6 +1,6 @@
 name: aflow
 base: core24
-version: 4.0.5
+version: 4.1
 summary: Automatic-FLOW for Materials Discovery
 description: |
   The Automatic-FLOW (AFLOW) framework is a class of interconnected software tools
@@ -18,7 +18,7 @@ parts:
   aflow:
     source: https://github.com/aflow-org/aflow.git
     source-submodules: []
-    source-tag: "v4.0.5"
+    source-tag: "v4.1"
     source-subdir: src
     source-type: git
     plugin: cmake

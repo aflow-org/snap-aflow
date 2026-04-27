@@ -5,7 +5,7 @@ Setup scripts to allow the installation of [aflow](https://github.com/aflow-org/
 ## How do I install aflow?
 
 ```shell
-snap install aflow
+sudo snap install aflow
 ```
 
 
