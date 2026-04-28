@@ -22,6 +22,8 @@ parts:
     source-subdir: src
     source-type: git
     plugin: cmake
+    build-environment:
+      - AFLOW_RELEASE: "true"
     cmake-generator: Ninja
     cmake-parameters:
       - CMAKE_BUILD_TYPE=Release
